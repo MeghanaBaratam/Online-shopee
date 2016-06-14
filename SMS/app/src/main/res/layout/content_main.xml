@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.meghana.sms.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="MESSAGE PAGE"
+            android:id="@+id/title1"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="25sp"
+            android:textColor="#006600"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:text="You can message only in few mintues"
+            android:id="@+id/title2"
+            android:layout_below="@id/title1"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+
+
+
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview1"
+            android:layout_below="@+id/title2"
+            android:text="Enter Number:"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+        <EditText
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/etnumber"
+            android:hint="Recipient Number"
+            android:layout_below="@+id/textview1"
+            android:inputType="number"
+           />
+
+            <requestFocus/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etnumber"
+            android:text="Enter Message:"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/etmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="25"
+            android:layout_below="@+id/textview2"
+            android:inputType="textMultiLine"
+            android:textStyle="italic"
+            android:hint="Message"
+            />
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send"
+            android:layout_alignBottom="@+id/etmessage"
+            android:layout_alignRight="@+id/etnumber"
+            android:layout_alignEnd="@+id/etnumber" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btsend"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/etmessage"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_alignEnd="@id/etnumber"-->
+            <!--android:text="send sms"/>-->
+
+    </RelativeLayout>
+
+
+</ScrollView>
