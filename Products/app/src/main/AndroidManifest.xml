@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meghana.products">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".model.SplashActivity"
+                  android:label="OnlineShopeee">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Online Shopeee"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CustomerActivity"
+                  android:label="Customers"
+            android:launchMode= "singleInstance">
+        </activity>
+        <activity android:name=".ProductActivity"
+                  android:label="Products"
+            android:launchMode= "singleInstance">
+        </activity>
+
+        <activity android:name=".OrderActivity"
+                  android:label="Orders"
+            android:launchMode= "singleInstance">
+
+        </activity>
+
+
+        <activity android:name=".NewCustomers"
+            android:label="customers"
+            android:launchMode= "singleInstance">
+        </activity>
+
+        <activity android:name=".NewProducts"
+                 android:label="products"
+            android:launchMode= "singleInstance">
+
+        </activity>
+        <activity android:name=".PopUp"
+                  android:label="orders"
+            android:launchMode= "singleInstance">
+
+        </activity>
+
+        <receiver android:name=".NotificationReciever">
+            <intent-filter android:priority="1">
+                <action android:name="android.intent.action.PHONE_STATE" />
+
+
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+
+
+</manifest>

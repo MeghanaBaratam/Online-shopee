@@ -1,0 +1,19 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+xmlns:app="http://schemas.android.com/tools">
+
+<item
+    android:id="@+id/action_settings"
+    android:title="@string/action_settings"
+    android:orderInCategory="100"
+    app:showAsAction="never"/>
+
+<item
+    android:id="@+id/action_search"
+    android:title="@string/action_search"
+    appcompat:actionViewClass="android.support.v7.widget.SearchView"
+    android:icon="@android:drawable/ic_search_category_default"
+    appcompat:showAsAction="never"/>
+
+</menu>

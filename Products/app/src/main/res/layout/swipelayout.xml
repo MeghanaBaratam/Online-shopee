@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_lyt_black"
+    android:layout_margin="4dp">
+
+
+    <com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        swipe:leftEdgeSwipeOffset="0dp"
+        swipe:rightEdgeSwipeOffset="0dp"
+        android:layout_margin="4dp">
+
+        <!--Bottom View For Right to Left-->
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+          >
+
+            <TextView
+                android:id="@+id/tvEdit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green"
+                android:gravity="center"
+                android:text="Edit"
+                android:onClick=""
+                android:textColor="#fff" />
+
+
+            <TextView
+                android:id="@+id/tvDelete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0076a5"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+
+
+        <!-- Top View,  Row itemView of RecyclerView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/v_fromvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Name"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/v_postvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_fromvalue"
+                android:layout_margin="5dp"
+                android:text="Cost"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</LinearLayout>
